@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f65ffa6b843519740aa8b8968a244124
+guid: 89548ddf12e766b418680e81c9dae56c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5250424039505840322
-    second: Fractal_Nuggies_0
+      213: -7922947177229698568
+    second: Dino_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fractal_Nuggies_0
+      name: Dino_0
       rect:
         serializedVersion: 2
-        x: 58
-        y: 82
-        width: 374
-        height: 283
+        x: 334
+        y: 0
+        width: 666
+        height: 924
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e37351d672fb227b0800000000000000
-      internalID: -5250424039505840322
+      spriteID: 8f93a0715890c0290800000000000000
+      internalID: -7922947177229698568
       vertices: []
       indices: 
       edges: []
@@ -171,8 +171,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Fractal_Nuggies_0: -5250424039505840322
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

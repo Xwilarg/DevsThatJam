@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dinosaur_0: -3187875618433125209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
