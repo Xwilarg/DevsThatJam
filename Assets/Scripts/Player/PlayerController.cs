@@ -25,8 +25,15 @@ namespace DevsThatJam
             _rb.velocity = new(_xMov * 5f, _rb.velocity.y);
             _arm.velocity = new(0f, _yMov);
 
-            if (_arm.transform.position.y < _downLimit.position.y) _arm.transform.position = new(_arm.transform.position.x, _downLimit.position.y);
-            if (_arm.transform.position.y > _upLimit.position.y) _arm.transform.position = new(_arm.transform.position.x, _upLimit.position.y);
+            if (_arm.transform.position.y < _downLimit.position.y)
+            {
+                _arm.transform.position = new(_arm.transform.position.x, _downLimit.position.y);
+            }
+
+            if (_arm.transform.position.y > _upLimit.position.y)
+            {
+                _arm.transform.position = new(_arm.transform.position.x, _upLimit.position.y);
+            }
         }
 
         private float BoundOne(float value)
