@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GuyManson_0: -2393971224314837117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
