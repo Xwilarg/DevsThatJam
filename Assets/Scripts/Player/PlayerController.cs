@@ -15,7 +15,7 @@ namespace DevsThatJam
 
         private void FixedUpdate()
         {
-            _rb.velocity = new(_xMov, _rb.velocity.y);
+            _rb.velocity = new(_xMov * 5f, _rb.velocity.y);
         }
 
         public void OnMove(InputAction.CallbackContext value)
