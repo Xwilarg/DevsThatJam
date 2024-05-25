@@ -695,8 +695,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1346563847
-BoxCollider2D:
+--- !u!60 &1346563847
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -739,8 +739,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 0.6}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -2.5046937, y: -0.29938745}
+      - {x: 2.4980924, y: -0.31620285}
+      - {x: 2.4937403, y: 0.26999998}
+      - {x: 1.8303944, y: 0.16981173}
+      - {x: 1.4338682, y: 0.21915722}
+      - {x: 0.7977896, y: 0.27632427}
+      - {x: 0.11279277, y: 0.277081}
+      - {x: -0.35067815, y: 0.27645397}
+      - {x: -1.6101573, y: 0.1488123}
+      - {x: -1.8054125, y: 0.14724302}
+      - {x: -2.493281, y: 0.19266316}
+  m_UseDelaunayMesh: 0
 --- !u!114 &1384760830 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8219636065942266719, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
@@ -817,9 +829,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1042504
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Size.y
+      value: 4.317793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12185645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14441204
+      objectReference: {fileID: 0}
     - target: {fileID: 4085189452968161886, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: m_Name
       value: Forklift
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507378435666259884, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315062075701861506, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7858833833232855906, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: m_LocalPosition.x

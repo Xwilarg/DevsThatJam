@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fractal_Nuggies_0: -5250424039505840322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

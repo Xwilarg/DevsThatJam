@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Forklift_0: 4055287881669030508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
