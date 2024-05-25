@@ -5,8 +5,15 @@ namespace DevsThatJam
 {
     public class PlayerController : MonoBehaviour
     {
+        [SerializeField]
+        private Transform _upLimit, _downLimit;
+
+        [SerializeField]
+        private Transform _arm;
+
         private Rigidbody2D _rb;
         private float _xMov;
+        private float _yMox;
 
         private void Awake()
         {
@@ -18,11 +25,16 @@ namespace DevsThatJam
             _rb.velocity = new(_xMov * 5f, _rb.velocity.y);
         }
 
+        private float BoundOne(float value)
+        {
+            if (value < 0f) value = -1f;
+            else if (value > 0f) value = 1f;
+            return value;
+        }
+
         public void OnMove(InputAction.CallbackContext value)
         {
-            _xMov = value.ReadValue<Vector2>().x;
-            if (_xMov < 0f) _xMov = -1f;
-            else if (_xMov > 0f) _xMov = 1f;
+            _xMov = BoundOne(value.ReadValue<Vector2>().x);
         }
     }
 }
