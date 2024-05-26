@@ -16,6 +16,16 @@ namespace DevsThatJam.Food
         {
             _foodSpawner.SpawnFood();
         }
+
+        private void Update()
+        {
+            // OOB check
+            if (transform.position.y < -10)
+            {
+                SpawnFood();
+                Destroy(gameObject);
+            }
+        }
     }
 }
 
