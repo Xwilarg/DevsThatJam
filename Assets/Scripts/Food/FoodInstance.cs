@@ -11,6 +11,8 @@ namespace DevsThatJam.Food
             Info = info;
             GetComponent<SpriteRenderer>().sprite = Info.FoodSprite;
             _foodSpawner = foodSpawner;
+
+            FoodManager.Instance.Add(info.Type);
         }
         public void SpawnFood()
         {
@@ -25,6 +27,11 @@ namespace DevsThatJam.Food
                 SpawnFood();
                 Destroy(gameObject);
             }
+        }
+
+        private void OnDestroy()
+        {
+            FoodManager.Instance.Remove(Info.Type);
         }
     }
 }

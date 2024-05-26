@@ -16,7 +16,7 @@ namespace DevsThatJam.Managers
         
         public FoodInfo GetRandomFood(FoodTypes except)
         {
-            var list = _foodList.Where(x => x.Type != except).ToArray();
+            var list = _foodList.Where(x => x.Type != except && FoodManager.Instance.Get(x.Type) < 2).ToArray();
             return list[Random.Range(0, list.Length)];
         }
         
