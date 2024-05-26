@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 6d8d830bf492c784a8edab3878afd69a
+guid: 7a4c5ece75a51864c91f884f93aaa761
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3493004890732418587
-    second: Dino_Leg_0
+      213: -3694445918336591143
+    second: Dino_TopheadAngry_0
+  - first:
+      213: 4388532113162413094
+    second: Dino_TopheadAngry_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +142,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dino_Leg_0
+      name: Dino_TopheadAngry_0
       rect:
         serializedVersion: 2
-        x: 806
-        y: 0
-        width: 194
-        height: 336
+        x: 334
+        y: 550
+        width: 549
+        height: 374
       alignment: 9
-      pivot: {x: 0.75662357, y: 0.6515371}
+      pivot: {x: 0.75, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e921310f8a568fc0800000000000000
-      internalID: -3493004890732418587
+      spriteID: 9dad7a3e201babcc0800000000000000
+      internalID: -3694445918336591143
       vertices: []
       indices: 
       edges: []
@@ -164,7 +167,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 25e069f7256c7a347b5986c0ada65ade
+    spriteID: a698ba8ffdb939241970855d366a5db1
     internalID: 0
     vertices: []
     indices: 
@@ -172,7 +175,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dino_Leg_0: -3493004890732418587
+      Dino_TopheadAngry_0: -3694445918336591143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
