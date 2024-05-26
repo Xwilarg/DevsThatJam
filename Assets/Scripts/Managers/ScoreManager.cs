@@ -7,12 +7,13 @@ namespace DevsThatJam.Managers
         private int _score;
         private float _timeSize;
         private bool _isTimerActive = false;
-        [SerializeField] private TextMeshProUGUI _scoreText;
+        [SerializeField] private TextMeshProUGUI _scoreText, _timerText;
         public static ScoreManager Instance { private set; get; }
 
         private void Awake()
         {
             Instance = this;
+            StartTimer(60f);
         }
 
         public void IncreaseScore(int increment) { _score += increment; UpdateScore(); }
@@ -39,6 +40,7 @@ namespace DevsThatJam.Managers
         private void Update()
         {
             if (_isTimerActive) ExecuteTimer();
+            _timerText.text =((int) _timeSize).ToString();
         }
 
     }
