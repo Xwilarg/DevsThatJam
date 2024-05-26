@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477584ac930d26e41b620a8be069e9c5, type: 3}
+  m_Name: BubbleTea
+  m_EditorClassIdentifier: 
+  Type: 6
+  FoodSprite: {fileID: -1243412696568073029, guid: 901be1227d20372489cbc484a8788524, type: 3}
+  ColliderPrefab: {fileID: 2603766765830618935, guid: e991e0d0e5d848e4abad98865c99c7f6, type: 3}

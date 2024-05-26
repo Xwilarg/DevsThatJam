@@ -18,10 +18,17 @@ namespace DevsThatJam.Monster
         {
             if(collision.CompareTag("Food"))
             {
-                if (FoodValidation(collision.GetComponent<FoodInstance>().Info))
+                var foodInstance = collision.transform.parent.GetComponent<FoodInstance>();
+                if (FoodValidation(foodInstance.Info))
                 {
-                    Destroy(collision.gameObject);
+                    //Points up!
                 }
+                else
+                {
+                    //Points down!
+                }
+                foodInstance.SpawnFood();
+                Destroy(foodInstance.gameObject);
             }
         }
         private void CreateThoughtBubble()

@@ -6,9 +6,14 @@ namespace DevsThatJam.Food
     {
         private void Start()
         {
+            SpawnFood();
+        }
+        public void SpawnFood()
+        {
             var foodSpawned = SpawnerManager.Instance.GetRandomFood();
             var foodClone = Instantiate(SpawnerManager.Instance.GetPrefab(), transform.position, Quaternion.identity);
-            foodClone.GetComponent<FoodInstance>().Init(foodSpawned);
+            foodClone.GetComponent<FoodInstance>().Init(foodSpawned, this);
+            var colliderClone = Instantiate(foodSpawned.ColliderPrefab, foodClone.transform);
         }
     }
 }

@@ -4,6 +4,11 @@ namespace DevsThatJam.Enums
         Circle,
         Square,
         Rectangle,
-        Triangle
+        Triangle,
+        BigFrite,
+        Borgar,
+        BubbleTea,
+        FractalNuggies,
+        Milkshake
     }
 }

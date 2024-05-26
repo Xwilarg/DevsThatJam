@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477584ac930d26e41b620a8be069e9c5, type: 3}
+  m_Name: Milkshake
+  m_EditorClassIdentifier: 
+  Type: 8
+  FoodSprite: {fileID: 5217416092606924499, guid: 4a44fd9679626dc468311d9daaf42f21, type: 3}
+  ColliderPrefab: {fileID: 3357865874195720622, guid: 14695b462bd1988459407276e09885af, type: 3}

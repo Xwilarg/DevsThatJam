@@ -1,3 +1,4 @@
+using DevsThatJam.Food;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,9 @@ namespace DevsThatJam
     [CreateAssetMenu(fileName = "Foodtype", menuName = "Scriptable Objects/Foodtype")]
     public class FoodInfo : ScriptableObject
     {
+        public Enums.FoodTypes Type;
+        public Sprite FoodSprite;
+        public GameObject ColliderPrefab;
         public static bool operator ==(FoodInfo a, FoodInfo b)
         {
             if(a is null)
@@ -22,8 +26,6 @@ namespace DevsThatJam
         {
             return !(a.Type == b.Type);
         }
-        public Enums.FoodTypes Type;
-        public Sprite FoodSprite;
 
         public override bool Equals(object obj)
         {
