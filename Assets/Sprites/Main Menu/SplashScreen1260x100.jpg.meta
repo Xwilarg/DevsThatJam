@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SplashScreen1260x100_0: 378332025850706797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
