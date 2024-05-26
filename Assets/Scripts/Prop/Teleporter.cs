@@ -55,12 +55,22 @@ namespace DevsThatJam.Prop
         private void Teleport()
         {
             var data = _target.Triggered.Select(x => new TeleportationData() { Target = x.transform.parent.gameObject, RelativePos = x.transform.position - _target.transform.position }).ToArray();
+            _teleportationTarget.Expulse();
             _target.transform.position = _teleportationTarget.OutPos;
             foreach (var elem in data)
             {
                 elem.Target.transform.position = (Vector2)_target.transform.position + elem.RelativePos;
             }
             StartCoroutine(_teleportationTarget.Reload());
+        }
+
+        private void Expulse()
+        {
+            foreach (var e in _triggerArea.Triggered)
+            {
+                var d = (e.transform.position - transform.position).normalized;
+                e.GetComponentInParent<Rigidbody2D>().AddForce(new Vector2(d.x, 1f).normalized * 100f, ForceMode2D.Impulse);
+            }
         }
 
         private IEnumerator Reload()
