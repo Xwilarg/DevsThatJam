@@ -1,3 +1,4 @@
+using DevsThatJam.Enums;
 using DevsThatJam.Managers;
 using UnityEngine;
 namespace DevsThatJam.Food
@@ -10,7 +11,7 @@ namespace DevsThatJam.Food
         }
         public void SpawnFood()
         {
-            var foodSpawned = SpawnerManager.Instance.GetRandomFood();
+            var foodSpawned = SpawnerManager.Instance.GetRandomFood((FoodTypes)(-1));
             var foodClone = Instantiate(SpawnerManager.Instance.GetPrefab(), transform.position, Quaternion.identity);
             foodClone.GetComponent<FoodInstance>().Init(foodSpawned, this);
             var colliderClone = Instantiate(foodSpawned.ColliderPrefab, foodClone.transform);

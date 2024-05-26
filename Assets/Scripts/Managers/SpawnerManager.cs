@@ -1,3 +1,5 @@
+using DevsThatJam.Enums;
+using System.Linq;
 using UnityEngine;
 namespace DevsThatJam.Managers
 {
@@ -12,9 +14,10 @@ namespace DevsThatJam.Managers
             Instance = this;
         }
         
-        public FoodInfo GetRandomFood()
+        public FoodInfo GetRandomFood(FoodTypes except)
         {
-            return _foodList[Random.Range(0, _foodList.Length)];
+            var list = _foodList.Where(x => x.Type != except).ToArray();
+            return list[Random.Range(0, list.Length)];
         }
         
         public GameObject GetPrefab()

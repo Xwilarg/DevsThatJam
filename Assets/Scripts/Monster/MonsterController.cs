@@ -17,7 +17,8 @@ namespace DevsThatJam.Monster
 
         private void CreateNeed()
         {
-            _chosenFood = SpawnerManager.Instance.GetRandomFood();
+            var prev = _chosenFood?.Type ?? (Enums.FoodTypes)(-1);
+            _chosenFood = SpawnerManager.Instance.GetRandomFood(prev);
             CreateThoughtBubble();
         }
         
