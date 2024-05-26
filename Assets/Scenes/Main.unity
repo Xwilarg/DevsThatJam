@@ -1121,37 +1121,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_Size.x
-      value: 3.1042504
-      objectReference: {fileID: 0}
-    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_Size.y
-      value: 4.317793
-      objectReference: {fileID: 0}
-    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.12185645
-      objectReference: {fileID: 0}
-    - target: {fileID: 1344507047533373650, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.14441204
+    - target: {fileID: 2574558997141819427, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 3f48ee0f601f9c54196339f77f55b1e2, type: 2}
+    - target: {fileID: 2574558997141819427, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4085189452968161886, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: m_Name
       value: Forklift
       objectReference: {fileID: 0}
-    - target: {fileID: 4507378435666259884, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.19
+    - target: {fileID: 4151718177876229885, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 3f48ee0f601f9c54196339f77f55b1e2, type: 2}
+    - target: {fileID: 4151718177876229885, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7201772870913175168, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_Constraints
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7315062075701861506, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-      propertyPath: m_Constraints
-      value: 0
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7858833833232855906, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: m_LocalPosition.x
