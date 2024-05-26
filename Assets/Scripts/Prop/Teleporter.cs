@@ -15,6 +15,9 @@ namespace DevsThatJam.Prop
 
         [SerializeField]
         private Transform _outPoint;
+
+        [SerializeField]
+        private TriggerArea _triggerArea;
         public Vector3 OutPos => _outPoint.position;
 
         private SpriteRenderer _sr;
