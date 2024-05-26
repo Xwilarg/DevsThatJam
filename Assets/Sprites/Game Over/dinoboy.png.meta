@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dinoboy_0: 7238995331083534160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

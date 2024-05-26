@@ -8,6 +8,9 @@ namespace DevsThatJam.Monster
         [SerializeField] GameObject _thoughtBubble, _thoughtPoint;
         private FoodInfo _chosenFood;
 
+        [SerializeField]
+        private AudioClip _munchSfx;
+
         private GameObject _bubbleFood;
 
         private void Start()
@@ -35,6 +38,7 @@ namespace DevsThatJam.Monster
                 {
                     ScoreManager.Instance.DecreaseScore(1);
                 }
+                AudioManager.Instance.PlayOneShot(_munchSfx);
                 foodInstance.SpawnFood();
                 Destroy(foodInstance.gameObject);
                 CreateNeed();
@@ -51,6 +55,7 @@ namespace DevsThatJam.Monster
             _bubbleFood = Instantiate(_thoughtBubble, _thoughtPoint.transform);
             // Grab SpriteRenderer of the thought clone
             var sr = _bubbleFood.GetComponentsInChildren<SpriteRenderer>()[1];
+            sr.transform.rotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
             // Set the chosen food sprite
             sr.sprite = _chosenFood.FoodSprite;
             // Set sprite to black for silhouette
