@@ -191,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 457980454}
   - component: {fileID: 457980455}
+  - component: {fileID: 457980456}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -233,6 +234,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 377f591e0de86f246ac6fa97c795db50, type: 2}
   - {fileID: 11400000, guid: ceb457b10d9ac294da44ae24480790a8, type: 2}
   _foodPrefab: {fileID: 3817299237025354782, guid: e69238c2f228e6042aad3503fd816fee, type: 3}
+--- !u!114 &457980456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457980453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5466642dec8829d4ba0b0ee6a7dd9258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1758,10 @@ PrefabInstance:
     - target: {fileID: 4085189452968161886, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315062075701861506, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7858833833232855906, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: m_LocalPosition.x

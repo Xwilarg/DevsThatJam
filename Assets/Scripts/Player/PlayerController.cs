@@ -19,11 +19,22 @@ namespace DevsThatJam.Player
         private float _xMov;
         private float _yMov;
 
+        private Vector2 _startingPos;
+
         public IEnumerable<GameObject> Triggered => _triggerArea.Triggered;
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
+            _startingPos = transform.position;
+        }
+
+        private void Update()
+        {
+            if (transform.position.y < -10f)
+            {
+                
+            }
         }
 
         private void FixedUpdate()
