@@ -10,6 +10,8 @@ namespace DevsThatJam.Managers
         private float _timeSize;
         private bool _isTimerActive = false;
         [SerializeField] private TextMeshProUGUI _scoreText, _timerText;
+
+        public static int FinalScore = 0;
         public static ScoreManager Instance { private set; get; }
 
         public bool CanPlay => _isTimerActive;
@@ -41,6 +43,7 @@ namespace DevsThatJam.Managers
             else
             {
                 _isTimerActive = false;
+                FinalScore = _score;
                 SceneManager.LoadScene("GameOver");
             }
         }
