@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thoughtBubble: {fileID: 2475011645991311860, guid: 37c175f70dd4efe49b885df59ecd4bb7, type: 3}
   _thoughtPoint: {fileID: 2671193084258204002}
+  _munchSfx: {fileID: 8300000, guid: dc106403860858b48bd138c9b1a02800, type: 3}
 --- !u!58 &986984508410056013
 CircleCollider2D:
   m_ObjectHideFlags: 0
