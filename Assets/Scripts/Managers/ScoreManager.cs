@@ -10,6 +10,8 @@ namespace DevsThatJam.Managers
         [SerializeField] private TextMeshProUGUI _scoreText, _timerText;
         public static ScoreManager Instance { private set; get; }
 
+        public bool CanPlay => _isTimerActive;
+
         private void Awake()
         {
             Instance = this;
@@ -34,13 +36,16 @@ namespace DevsThatJam.Managers
         private void ExecuteTimer()
         {
             if(_timeSize >= 0f) _timeSize -= Time.deltaTime;
-            else _isTimerActive = false;
+            else
+            {
+                _isTimerActive = false;
+            }
         }
 
         private void Update()
         {
             if (_isTimerActive) ExecuteTimer();
-            _timerText.text =((int) _timeSize).ToString();
+            _timerText.text = ((int)_timeSize).ToString();
         }
 
     }

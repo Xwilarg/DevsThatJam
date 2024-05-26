@@ -24,7 +24,7 @@ namespace DevsThatJam.Monster
         
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if(collision.CompareTag("Food"))
+            if(collision.CompareTag("Food") && ScoreManager.Instance.CanPlay)
             {
                 var foodInstance = collision.transform.parent.GetComponent<FoodInstance>();
                 if (FoodValidation(foodInstance.Info))

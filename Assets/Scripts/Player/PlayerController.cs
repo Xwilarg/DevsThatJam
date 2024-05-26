@@ -1,3 +1,4 @@
+using DevsThatJam.Managers;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -40,8 +41,15 @@ namespace DevsThatJam.Player
 
         private void FixedUpdate()
         {
-            _rb.velocity = new(_xMov * 8f, _rb.velocity.y);
-            _arm.localPosition = new(0f, _arm.localPosition.y + _yMov * Time.fixedDeltaTime * 4f);
+            if (ScoreManager.Instance.CanPlay)
+            {
+                _rb.velocity = new(_xMov * 8f, _rb.velocity.y);
+                _arm.localPosition = new(0f, _arm.localPosition.y + _yMov * Time.fixedDeltaTime * 4f);
+            }
+            else
+            {
+                _rb.velocity = new(0f, _rb.velocity.y);
+            }
 
             if (_arm.transform.position.y < _downLimit.position.y)
             {
