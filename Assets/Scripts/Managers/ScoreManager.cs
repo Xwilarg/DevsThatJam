@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 namespace DevsThatJam.Managers
 {
     public class ScoreManager : MonoBehaviour
@@ -39,6 +41,7 @@ namespace DevsThatJam.Managers
             else
             {
                 _isTimerActive = false;
+                SceneManager.LoadScene("GameOver");
             }
         }
 
