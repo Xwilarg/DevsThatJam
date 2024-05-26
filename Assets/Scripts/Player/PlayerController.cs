@@ -19,6 +19,9 @@ namespace DevsThatJam.Player
         [SerializeField]
         private AudioClip _upDownSfx;
 
+        [SerializeField]
+        private Animator _anim;
+
         private Rigidbody2D _rb;
         private float _xMov;
         private float _yMov;
@@ -55,6 +58,8 @@ namespace DevsThatJam.Player
                 _source.volume = _xMov == 0f ? 0f : _baseVolume;
                 _rb.velocity = new(_xMov * 8f, _rb.velocity.y);
                 _arm.localPosition = new(0f, _arm.localPosition.y + _yMov * Time.fixedDeltaTime * 4f);
+
+
             }
             else
             {
@@ -87,6 +92,9 @@ namespace DevsThatJam.Player
 
             var lastY = _yMov;
             _yMov = BoundOne(v2.y);
+
+
+            _anim.SetFloat("xDir", _xMov);
 
             if (lastY != _yMov && _yMov != 0f)
             {
