@@ -33,10 +33,12 @@ namespace DevsThatJam.Monster
                 if (FoodValidation(foodInstance.Info))
                 {
                     ScoreManager.Instance.IncreaseScore(5);
+                    GetComponent<Animator>().SetTrigger("Eat");
                 }
                 else
                 {
                     ScoreManager.Instance.DecreaseScore(1);
+                    GetComponent<Animator>().SetTrigger("Angry");
                 }
                 AudioManager.Instance.PlayOneShot(_munchSfx);
                 foodInstance.SpawnFood();
