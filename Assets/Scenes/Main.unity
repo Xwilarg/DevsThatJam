@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000e9b607c1e34ebe47eb8754f347030ab7
+  m_ApplyToSortingLayers: 00000000e9b607c1e34ebe47eb8754f347030ab701c221a5
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1400,6 +1400,14 @@ PrefabInstance:
     - target: {fileID: 986984508410056013, guid: ea38f880585c4a942a88c4b829ccfd10, type: 3}
       propertyPath: m_Offset.y
       value: 2.1799836
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563781890829127665, guid: ea38f880585c4a942a88c4b829ccfd10, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563781890829127665, guid: ea38f880585c4a942a88c4b829ccfd10, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 6676000840586462361, guid: ea38f880585c4a942a88c4b829ccfd10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1907,11 +1915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ac99e722977a540953ba473bb90511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1384760832 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8590634603787306382, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
-  m_PrefabInstance: {fileID: 6389076642794814638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1393555871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2932,7 +2935,7 @@ PrefabInstance:
     - target: {fileID: 8219636065942266719, guid: 2d7bf81905ea9024d838fd5365de0371, type: 3}
       propertyPath: _anim
       value: 
-      objectReference: {fileID: 1384760832}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

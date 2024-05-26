@@ -54,5 +54,8 @@ TagManager:
   - name: Teleporter
     uniqueID: 4082403307
     locked: 0
+  - name: Foreground
+    uniqueID: 2770452993
+    locked: 0
   m_RenderingLayers:
   - Default
