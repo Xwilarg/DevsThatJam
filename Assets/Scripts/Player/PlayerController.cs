@@ -16,6 +16,9 @@ namespace DevsThatJam.Player
         [SerializeField]
         private TriggerArea _triggerArea;
 
+        [SerializeField]
+        private AudioClip _upDownSfx;
+
         private Rigidbody2D _rb;
         private float _xMov;
         private float _yMov;
@@ -73,7 +76,14 @@ namespace DevsThatJam.Player
         {
             var v2 = value.ReadValue<Vector2>();
             _xMov = BoundOne(v2.x);
+
+            var lastY = _yMov;
             _yMov = BoundOne(v2.y);
+
+            if (lastY != _yMov && _yMov != 0f)
+            {
+                AudioManager.Instance.PlayOneShot(_upDownSfx);
+            }
         }
     }
 }
