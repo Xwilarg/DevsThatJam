@@ -1,6 +1,4 @@
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 namespace DevsThatJam.Managers
@@ -9,8 +7,6 @@ namespace DevsThatJam.Managers
     {
 
         [SerializeField] GameObject _instructionScreen;
-
-        [SerializeField] SceneAsset _gameScene;
 
         [SerializeField] Animator _anim;
 
@@ -42,7 +38,7 @@ namespace DevsThatJam.Managers
 
         public void StartGame()
         {
-            SceneManager.LoadScene(_gameScene.name);
+            SceneManager.LoadScene("Main");
         }
     }
 }
