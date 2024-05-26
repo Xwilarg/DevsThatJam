@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 namespace DevsThatJam.Managers
 {
     public class ScoreManager : MonoBehaviour
@@ -7,6 +7,7 @@ namespace DevsThatJam.Managers
         private int _score;
         private float _timeSize;
         private bool _isTimerActive = false;
+        [SerializeField] private TextMeshProUGUI _scoreText;
         public static ScoreManager Instance { private set; get; }
 
         private void Awake()
@@ -14,9 +15,11 @@ namespace DevsThatJam.Managers
             Instance = this;
         }
 
-        public void IncreaseScore(int increment) => _score += increment;
+        public void IncreaseScore(int increment) { _score += increment; UpdateScore(); }
 
-        public void DecreaseScore(int decrement) => _score -= decrement;
+        public void DecreaseScore(int decrement) { _score -= decrement; UpdateScore(); }
+
+        public void UpdateScore() { _scoreText.text = _score.ToString(); }
 
         public int GetScore() => _score;
 
