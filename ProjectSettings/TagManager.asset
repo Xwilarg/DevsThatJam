@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3070886727
+    locked: 0
   - name: Monster
     uniqueID: 1203654371
     locked: 0
