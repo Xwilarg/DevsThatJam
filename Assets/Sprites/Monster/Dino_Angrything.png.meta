@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f07e4bfbbb3ea6c4c99200c2599d6dad
+guid: 7613e4cb4f8bbec44a372a82389a0ead
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -106,6 +106,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,11 +152,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 697
-        y: 734
-        width: 50
-        height: 52
+        y: 687
+        width: 101
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,84 +169,19 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Dino_Angrything_1
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 733
-        width: 47
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 703d55f3fde973dd0800000000000000
-      internalID: -2506359985930906873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dino_Angrything_2
-      rect:
-        serializedVersion: 2
-        x: 703
-        y: 687
-        width: 42
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25c2e43974b943820800000000000000
-      internalID: 2897111192022428754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dino_Angrything_3
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 687
-        width: 45
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bf8a27da75482130800000000000000
-      internalID: 3542157500825112496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: de7fbe374ceba6d4e96842310a4d17d8
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dino_Angrything_0: 1013829163439901857
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
