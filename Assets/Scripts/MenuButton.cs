@@ -6,6 +6,8 @@ public class MenuButton : MonoBehaviour
     public GameObject definedButton;
     public UnityEvent OnClick = new UnityEvent();
 
+    public Color HoverColor;
+
     void Start()
     {
         definedButton = this.gameObject;
@@ -14,5 +16,14 @@ public class MenuButton : MonoBehaviour
     private void OnMouseDown()
     {
         OnClick.Invoke();
+    }
+
+    private void OnMouseEnter()
+    {
+        GetComponent<SpriteRenderer>().color = HoverColor;
+    }
+    private void OnMouseExit()
+    {
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
