@@ -9,7 +9,7 @@ namespace DevsThatJam
         private Transform _upLimit, _downLimit;
 
         [SerializeField]
-        private Rigidbody2D _arm;
+        private Transform _arm;
 
         private Rigidbody2D _rb;
         private float _xMov;
@@ -23,7 +23,7 @@ namespace DevsThatJam
         private void FixedUpdate()
         {
             _rb.velocity = new(_xMov * 5f, _rb.velocity.y);
-            _arm.velocity = new(0f, _yMov);
+            _arm.localPosition = new(0f, _arm.localPosition.y + _yMov * Time.fixedDeltaTime * 2f);
 
             if (_arm.transform.position.y < _downLimit.position.y)
             {

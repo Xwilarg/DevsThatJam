@@ -333,7 +333,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3f48ee0f601f9c54196339f77f55b1e2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -607,7 +607,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &8219636065942266719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3f48ee0f601f9c54196339f77f55b1e2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

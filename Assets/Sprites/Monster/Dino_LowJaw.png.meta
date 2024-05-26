@@ -171,7 +171,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dino_LowJaw_0: 8486870017869798232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
