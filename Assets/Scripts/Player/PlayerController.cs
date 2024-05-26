@@ -33,7 +33,8 @@ namespace DevsThatJam.Player
         {
             if (transform.position.y < -10f)
             {
-                
+                transform.position = _startingPos;
+                _rb.velocity = Vector2.zero;
             }
         }
 
