@@ -8,7 +8,14 @@ namespace DevsThatJam.Monster
         [SerializeField] GameObject _thoughtBubble, _thoughtPoint;
         private FoodInfo _chosenFood;
 
+        private GameObject _bubbleFood;
+
         private void Start()
+        {
+            CreateNeed();
+        }
+
+        private void CreateNeed()
         {
             _chosenFood = SpawnerManager.Instance.GetRandomFood();
             CreateThoughtBubble();
@@ -21,25 +28,31 @@ namespace DevsThatJam.Monster
                 var foodInstance = collision.transform.parent.GetComponent<FoodInstance>();
                 if (FoodValidation(foodInstance.Info))
                 {
-                    //Points up!
+                    ScoreManager.Instance.IncreaseScore(5);
                 }
                 else
                 {
-                    //Points down!
+                    ScoreManager.Instance.DecreaseScore(1);
                 }
                 foodInstance.SpawnFood();
                 Destroy(foodInstance.gameObject);
+                CreateNeed();
             }
         }
         private void CreateThoughtBubble()
         {
+            if (_bubbleFood != null)
+            {
+                Destroy(_bubbleFood);
+            }
+
             // Create a clone with the current thought bubble
-            GameObject thoughtClone = Instantiate(_thoughtBubble, _thoughtPoint.transform);
+            _bubbleFood = Instantiate(_thoughtBubble, _thoughtPoint.transform);
             // Grab SpriteRenderer of the thought clone
-            var sr = thoughtClone.GetComponentsInChildren<SpriteRenderer>()[1];
+            var sr = _bubbleFood.GetComponentsInChildren<SpriteRenderer>()[1];
             // Set the chosen food sprite
             sr.sprite = _chosenFood.FoodSprite;
-            // Set sprite to black for sillouette
+            // Set sprite to black for silhouette
             sr.color = Color.black;
         }
 
