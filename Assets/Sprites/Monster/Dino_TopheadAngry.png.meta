@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 7e3051dfca6a40844a3b82cadcf37870
+guid: 308593f16350ae843945276da0d1dcd3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7295656691092514709
-    second: GameOver Text_0
+      213: -3694445918336591143
+    second: Dino_TopheadAngry_0
+  - first:
+      213: 4388532113162413094
+    second: Dino_TopheadAngry_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +100,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameOver Text_0
+      name: Dino_TopheadAngry_0
       rect:
         serializedVersion: 2
-        x: 356
-        y: 610
-        width: 742
-        height: 298
+        x: 334
+        y: 550
+        width: 549
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59765c34b116f3560800000000000000
-      internalID: 7295656691092514709
+      spriteID: 9dad7a3e201babcc0800000000000000
+      internalID: -3694445918336591143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dino_TopheadAngry_1
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 546
+        width: 77
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624a07a94b237ec30800000000000000
+      internalID: 4388532113162413094
       vertices: []
       indices: 
       edges: []
@@ -171,8 +183,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      GameOver Text_0: 7295656691092514709
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

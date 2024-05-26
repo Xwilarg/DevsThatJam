@@ -8,6 +8,9 @@ namespace DevsThatJam.Monster
         [SerializeField] GameObject _thoughtBubble, _thoughtPoint;
         private FoodInfo _chosenFood;
 
+        [SerializeField]
+        private AudioClip _munchSfx;
+
         private GameObject _bubbleFood;
 
         private void Start()
@@ -35,6 +38,7 @@ namespace DevsThatJam.Monster
                 {
                     ScoreManager.Instance.DecreaseScore(1);
                 }
+                AudioManager.Instance.PlayOneShot(_munchSfx);
                 foodInstance.SpawnFood();
                 Destroy(foodInstance.gameObject);
                 CreateNeed();
