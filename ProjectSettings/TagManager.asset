@@ -17,7 +17,7 @@ TagManager:
   - Floor
   - Crate
   - Monster
-  - 
+  - Teleporter
   - 
   - 
   - 
@@ -47,6 +47,9 @@ TagManager:
     locked: 0
   - name: Forklift
     uniqueID: 3238508265
+    locked: 0
+  - name: Teleporter
+    uniqueID: 4082403307
     locked: 0
   m_RenderingLayers:
   - Default
