@@ -25,11 +25,17 @@ namespace DevsThatJam.Player
 
         private Vector2 _startingPos;
 
+        private AudioSource _source;
+        private float _baseVolume;
+
         public IEnumerable<GameObject> Triggered => _triggerArea.Triggered;
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
+
+            _source = GetComponentInChildren<AudioSource>();
+            _baseVolume = _source.volume;
             _startingPos = transform.position;
         }
 
@@ -46,11 +52,13 @@ namespace DevsThatJam.Player
         {
             if (ScoreManager.Instance.CanPlay)
             {
+                _source.volume = _xMov == 0f ? 0f : _baseVolume;
                 _rb.velocity = new(_xMov * 8f, _rb.velocity.y);
                 _arm.localPosition = new(0f, _arm.localPosition.y + _yMov * Time.fixedDeltaTime * 4f);
             }
             else
             {
+                _source.volume = 0f;
                 _rb.velocity = new(0f, _rb.velocity.y);
             }
 
