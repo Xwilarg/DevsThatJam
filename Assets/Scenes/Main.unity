@@ -616,6 +616,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 986984508410056013, guid: 5ca0dc5334af10e45bb3de7de5e36f64, type: 3}
+      propertyPath: m_Radius
+      value: 1.9093757
+      objectReference: {fileID: 0}
+    - target: {fileID: 986984508410056013, guid: 5ca0dc5334af10e45bb3de7de5e36f64, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.6563711
+      objectReference: {fileID: 0}
+    - target: {fileID: 986984508410056013, guid: 5ca0dc5334af10e45bb3de7de5e36f64, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.115424395
+      objectReference: {fileID: 0}
     - target: {fileID: 3610634983105556645, guid: 5ca0dc5334af10e45bb3de7de5e36f64, type: 3}
       propertyPath: m_Sprite
       value: 
