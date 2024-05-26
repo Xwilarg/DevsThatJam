@@ -1,4 +1,6 @@
+using DevsThatJam.Player;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 namespace DevsThatJam.Prop
@@ -49,7 +51,12 @@ namespace DevsThatJam.Prop
 
         private void Teleport()
         {
+            var data = _target.Triggered.Select(x => new TeleportationData() { Target = x.transform.parent.gameObject, RelativePos = x.transform.position - _target.transform.position }).ToArray();
             _target.transform.position = _teleportationTarget.OutPos;
+            foreach (var elem in data)
+            {
+                elem.Target.transform.position = (Vector2)_target.transform.position + elem.RelativePos;
+            }
             StartCoroutine(_teleportationTarget.Reload());
         }
 
@@ -64,6 +71,12 @@ namespace DevsThatJam.Prop
             {
                 Teleport();
             }
+        }
+
+        record TeleportationData
+        {
+            public Vector2 RelativePos;
+            public GameObject Target;
         }
     }
 }

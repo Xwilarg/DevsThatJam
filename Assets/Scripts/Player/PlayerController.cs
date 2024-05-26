@@ -1,7 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace DevsThatJam
+namespace DevsThatJam.Player
 {
     public class PlayerController : MonoBehaviour
     {
@@ -11,9 +12,14 @@ namespace DevsThatJam
         [SerializeField]
         private Transform _arm;
 
+        [SerializeField]
+        private TriggerArea _triggerArea;
+
         private Rigidbody2D _rb;
         private float _xMov;
         private float _yMov;
+
+        public IEnumerable<GameObject> Triggered => _triggerArea.Triggered;
 
         private void Awake()
         {
